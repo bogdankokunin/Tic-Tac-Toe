@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+}
+
+main {
+    height: 70vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    flex-shrink: 0;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    border: 5px solid rgb(44, 172, 40);
+}
+
+.signField {
+    background-color: rgb(4, 209, 113);
+    text-align: center;
+    font-size: 4rem;
+}
+
+#message {
+    color: white;
+    font-size: 1rem;
+}
+
+#restart {
+    width: 25px;
+    height: 10px;
+}
